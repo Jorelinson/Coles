@@ -270,3 +270,45 @@ footer {
     font-weight: bold;
     font-variant-numeric: tabular-nums; /* Mantiene los números alineados */
 }
+
+/* --- ADAPTACIÓN PARA TELÉFONOS (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    /* 1. Apretar la barra de navegación */
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    /* 2. Reducir los márgenes laterales gigantes */
+    .section {
+        padding: 40px 20px;
+    }
+    .match-info {
+        padding: 20px;
+        width: 90%;
+    }
+
+    /* 3. Achicar los textos gigantes */
+    .teams { font-size: 2rem; margin-bottom: 20px; }
+    .vs { font-size: 1.2rem; margin: 0 10px; }
+    .countdown { font-size: 1.2rem; }
+    .section-title { font-size: 1.8rem; }
+
+    /* 4. Hacer que el video de YouTube se adapte al 100% del ancho */
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9; /* Mantiene la proporción del video */
+    }
+
+    /* 5. Ajustar el logo */
+    .logo-container h1 { font-size: 1.5rem; }
+    .logo { height: 50px; }
+}
