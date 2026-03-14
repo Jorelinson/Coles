@@ -1,7 +1,7 @@
 // 1. BASE DE DATOS DE PARTIDOS (Agrega o quita partidos aquí)
 // Formato de fecha: "YYYY-MM-DDTHH:MM:SS-05:00" (El -05:00 es clave para la zona horaria de Colombia)
 const partidos = [
-    { rival: "Semen Demons", liga: "MLV", fecha: "2026-03-13T20:00:00-05:00" },
+    { rival: "Tcheco", liga: "VNL", fecha: "2026-03-14T18:00:00-05:00" },
     { rival: "CT", liga: "UVA", fecha: "2026-03-14T19:00:00-05:00" },
 
 ];
