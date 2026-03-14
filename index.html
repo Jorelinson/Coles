@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coles - Voleibol</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="logo-container">
+        <img src="logo-coles.png" alt="Logo Coles" class="logo">
+        <h1>COLES</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#proximo-partido">Próximo Partido</a></li>
+        <li><a href="#alineacion">Alineación</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#reclutamiento">Únete</a></li>
+    </ul>
+</nav>
+
+<header id="proximo-partido" class="hero">
+    <div class="match-info fade-in">
+        <h2>Siguiente Encuentro</h2>
+        <h3 class="league">Liga Nacional de Voleibol</h3>
+        <div class="teams">
+            <span class="team us">COLES</span>
+            <span class="vs">VS</span>
+            <span class="team rival">TITANES</span>
+        </div>
+
+        <div class="time-details">
+            <p><strong>Hora Colombia (COT):</strong> <span id="hora-col">20:00</span></p>
+            <p><strong>Hora Este (EST):</strong> <span id="hora-est">21:00</span></p>
+        </div>
+
+        <div class="countdown">
+            Faltan: <span id="timer">Cargando...</span>
+        </div>
+    </div>
+</header>
+
+<section id="alineacion" class="section">
+    <h2 class="section-title">Alineación</h2>
+
+    <h3 class="position-title">Titulares</h3>
+    <div class="roster-grid">
+        <div class="player-card">
+            <div class="player-img placeholder"></div>
+            <h4>Jugador 1</h4>
+            <p class="position">Armador</p>
+            <p class="desc">Especialista en pases rápidos y bloqueos sorpresa.</p>
+            <a href="#" class="social-link">TikTok: @jugador1</a>
+        </div>
+        <div class="player-card">
+            <div class="player-img placeholder"></div>
+            <h4>Jugador 2</h4>
+            <p class="position">Rematador Exterior</p>
+            <p class="desc">Potencia bruta en la red.</p>
+            <a href="#" class="social-link">TikTok: @jugador2</a>
+        </div>
+    </div>
+
+    <h3 class="position-title">Suplentes</h3>
+    <div class="roster-grid">
+        <div class="player-card">
+            <div class="player-img placeholder"></div>
+            <h4>Jugador 3</h4>
+            <p class="position">Líbero</p>
+            <p class="desc">Defensa inquebrantable.</p>
+            <a href="#" class="social-link">TikTok: @jugador3</a>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="section bg-dark">
+    <h2 class="section-title">Partidos Recientes</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="reclutamiento" class="section">
+    <h2 class="section-title">Quiero Ingresar al Equipo</h2>
+    <form action="https://formspree.io/f/TU_CODIGO_FORMSPREE" method="POST" class="join-form">
+        <input type="text" name="nombre" placeholder="Nombre Completo" required>
+        <input type="text" name="pais" placeholder="País" required>
+        <input type="text" name="region" placeholder="Región / Ciudad" required>
+
+        <select name="nivel" required>
+            <option value="" disabled selected>Nivel de Juego</option>
+            <option value="Principiante">Principiante</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Avanzado">Avanzado / Competitivo</option>
+        </select>
+
+        <textarea name="equipos_previos" placeholder="¿En qué equipos has estado antes? (Opcional)" rows="4"></textarea>
+
+        <button type="submit" class="btn-submit">Enviar Solicitud</button>
+    </form>
+</section>
+
+<footer>
+    <h2>Nuestras Redes</h2>
+    <div class="footer-links">
+        <a href="https://discord.gg/tu-enlace" target="_blank" class="discord-btn">Unirse al Discord</a>
+    </div>
+    <p>&copy; 2026 Equipo de Voleibol Coles. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
